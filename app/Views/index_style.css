@@ -1,0 +1,75 @@
+body {background-image: url(register.jpg);}
+
+
+.header {width: 100%;
+        height: 100px;
+        background-color: #2A2473;
+        text-align: center;
+        margin-bottom: 20px;}
+
+
+
+
+
+
+
+.button1 {width: 250px;
+         height: 80px;
+         background-color: #E91107;
+         text-align: center;
+         font-size: 35px;
+         color: #ffffff;
+         margin-bottom: 5px;
+         margin-right: auto;
+         margin-left: auto;
+         border-radius: 3px solid black;
+         border-radius: 5px;
+         vertical-align: center;
+         line-height: 80px;}
+
+
+  
+.button1:hover {width: 260px;
+         height: 90px;
+         background-color: #E91107;
+         text-align: center;
+         font-size: 40px;
+         color: #ffffff;
+         margin-bottom: 5px;
+         margin-right: auto;
+         margin-left: auto;
+          border-radius: 3px solid black;
+         border-radius: 5px;
+          box-shadow: 5px 5px 10px white;}
+
+
+   
+
+.button2 {width: 250px;
+         height: 80px;
+         background-color: #0715EC;
+         text-align: center;
+         font-size: 35px;
+         color: #ffffff;
+         margin-right: auto;
+         margin-left: auto;
+      border-radius: 3px solid black;
+         border-radius: 5px;}
+
+
+
+
+.button2:hover {width: 260px;
+         height: 90px;
+         background-color:  #0715EC;
+         text-align: center;
+         font-size: 40px;
+         color: #ffffff;
+         margin-right: auto;
+         margin-left: auto;
+          border-radius: 3px solid black;
+         border-radius: 5px;
+         box-shadow: 5px 5px 10px white;}
+
+
+.col-sm-12 a:hover{text-decoration: none;}

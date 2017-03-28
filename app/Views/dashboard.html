@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<title>linksaver</title>
+
+<link rel="stylesheet" type="text/css" href="linksaver_style.css">
+
+<script src="linksaver.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="row header">
+<div class="col-sm-12">
+	<h1 style="font-size: 50px;color: #ffffff;font-family: 'Orbitron', sans-serif;"> The LinkSaver app </h1>
+	<p style="text-align: right;vertical-align: center;font-size: 20px;color: #ffffff;">
+    <!--
+    	<input type="submit" name="logout" value="LOGOUT">
+    </form>-->
+
+    <a href="/logout"><button type="submit" name="logout"></button></a>
+	</p>
+</div>
+</div><br><br>
+
+<div class="row header">
+<div class="col-sm-12">
+
+<!--<form action="/dashboard" method="POST">
+	<input type="submit" name="showlink" value="Show Links">
+</form>-->
+
+<a href="/dashboard"><button type="submit" name="showlink">show saved links</button></a>
+
+</div>	
+</div>
+<br><br>
+
+<div class="row header">
+<div class="col-sm-12">
+<!-----table comes here with twig code---->
+<table>
+<thead>
+	<tr>
+		<th>ID</th>
+		<th>LINKS</th>
+	</tr>
+</thead>
+
+<tbody>
+	{% for link in links %}
+	<tr>
+		<td>#</td>
+		<td><a href="www.facebook.com" style="color: black;text-decoration: none;">{{link.links}}</a></td>
+	</tr>
+
+	{% endfor %}
+</tbody>
+
+</table>
+
+</div>	
+</div>
+
+<br><br><br><br>
+
+<div class="row header">
+<div class="col-sm-12">
+<form action="/dashboard" method="POST">
+    <input type="text" name="link">
+	<input type="submit" name="savelink" value="save Links">
+</form>
+</div>	
+</div>
+<br><br>
+
+
+</body>
+</html>
